@@ -1,0 +1,27 @@
+server:
+  host: 
+  port: 4558
+monitoring:
+  status-url: https://api-demo.rektangularstudios.com/order-fulfillment/status
+postgres:
+  database: novellia_alpha
+  host: 127.0.0.1:5432
+  username: rektangular
+  password: X
+  queries-path: /sql
+novellia:
+  host: localhost
+  port: 3558
+now-payments:
+  # sandbox key
+  api-key: X
+  ipn-secret-key: X
+  ipn-callback-url: https://api-demo.rektangularstudios.com/order-fulfillment/ipn
+  is-sandbox: false
+cardano:
+  hot-wallet-signing-key-path: "/payment.skey"
+  # cold-wallet
+  hot-wallet-address: "addr1"
+  scripts-path: "/scripts"
+  protocol-params-path: "/params.json"
+mocked: false

@@ -1,0 +1,12 @@
+UPDATE novellia.product
+SET 
+  date_available = '2021-05-22T13:00:00-08:00';
+
+
+UPDATE novellia.product
+SET 
+  date_available = NULL
+WHERE product_id = 'PROD-01F4MK4ZCVTKAAZF1QZAPWMPFP' OR
+  product_id = 'PROD-01F4MK4ZNC8FMVR2ANHDW9E1N4' OR
+  product_id = 'PROD-01F4MK4ZYC6P9EGG4W0DNFQTWS' OR
+  product_id = 'PROD-01F5YTNB4BSBKPGRKHVHEM9F0F';
